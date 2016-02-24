@@ -5,7 +5,7 @@ Winter Semester 2016
 Department of CSE,NIT Calicut
 
 Group Details :
- Dintakurti Bharat
- J Vasishtha Sriram
+ Dintakurti Bharat,
+ J Vasishtha Sriram,
  R Sai Naveen
  -- ECE S8 -- 
