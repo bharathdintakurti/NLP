@@ -1,5 +1,5 @@
 # Natural-Language-Processing
-Sentiment Analysis | Assignment | Natural Language Processing
+Assignment | Natural Language Processing
 
 Winter Semester 2016
 Department of CSE,NIT Calicut
