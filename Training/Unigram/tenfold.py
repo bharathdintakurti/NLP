@@ -1,4 +1,4 @@
-from test1 import multinomial_naive_bayes
+from unigram import multinomial_naive_bayes
 
 def tenfold(data):
 	
