@@ -3,13 +3,13 @@ import stopwords
 
 
 def positiveinit(data):
-	
+
     #Create Positive MegaDoc
 
 	reviews_file = open(data, "r")
 	megadoc = ""
 
-    
+
 	for line in reviews_file:
 
     		megadoc  = megadoc + line
@@ -18,15 +18,15 @@ def positiveinit(data):
 
 	words = megadoc.split()
 
-	words.sort() 
+	words.sort()
 	global cpl
 	cpl = words.count('+')
-	
+
 	for i in range(cpl):
 		words.remove('+')
-    
+
 	#print(words)
-	count=1
+
 	global positivefreq
 	positivefreq=[]
 	global positivevocab
@@ -36,7 +36,7 @@ def positiveinit(data):
 
 		temp = words[0]
 		#print(temp)
-		
+
 
 		count = words.count(temp)
 		#print(count)
@@ -46,40 +46,40 @@ def positiveinit(data):
 
 		for i in range(count):
 			words.remove(temp)
-		
-		
-			
-	reviews_file.close()
-    
 
+
+
+	reviews_file.close()
+
+	print("Positive Init Completed")
 	return
 
 def negativeinit(data):
-	
+
     #Create Negative MegaDoc
- 
+
 	reviews_file = open(data, "r")
-    
+
 	megadoc = ""
 
-    
-	for line in reviews_file: 
- 
+
+	for line in reviews_file:
+
 		megadoc  = megadoc + line
 
     #Create Vocabulary List
 
 	words = megadoc.split()
-	words.sort() 
-	
+	words.sort()
+
 	global cnl
 	cnl = words.count('-')
 
 	for i in range(cnl):
 		words.remove('-')
-    
-    
-	count=1
+
+
+
 	global negativefreq
 	negativefreq=[]
 	global negativevocab
@@ -88,23 +88,22 @@ def negativeinit(data):
 	while len(words) > 0:
 
 		temp = words[0]
-    
-        
+
+
 		count = words.count(temp)
 
 		if count > 1 :
 
 			negativevocab.append(str(temp))
-			negativefreq.append(count) 
+			negativefreq.append(count)
 
 		for i in range(count):
 			words.remove(temp)
-		#elif count>1:
-			#words.remove(temp)
+
 
 	reviews_file.close()
 
-
+	print("Negative Init Completed")
 	return
 
 
@@ -123,18 +122,18 @@ def calculate_positive(sentence):
 			probword = math.log2((count + 1)/(sum(positivefreq)+int(len(positivevocab))))
 
 			prob = prob + probword
-		else : 
+		else :
 			prob = prob + math.log2((1)/(int(len(positivevocab))))
 
 	return prob
 
 def calculate_negative(sentence):
-	
+
 	prob = math.log2(cnl /(cpl + cnl))
 
 	for word in sentence:
 
-		if word in negativevocab :	
+		if word in negativevocab :
 
 			index = negativevocab.index(word)
 			count = negativefreq[index]
@@ -144,7 +143,7 @@ def calculate_negative(sentence):
 
 			prob = prob + probword
 		else :
-			prob = prob + math.log2((1)/(int(len(negativevocab))))	
+			prob = prob + math.log2((1)/(int(len(negativevocab))))
 
 	return prob
 
@@ -153,8 +152,8 @@ def create_posneg(data):
 
 	stopwords.remove_stopwords(data)
 	training_without_stopwords = open("data_without_stopwords.txt", "r")
-	positive_superdoc = open("positive4.txt", "w")
-	negative_superdoc = open("negative4.txt", "w")
+	positive_superdoc = open("positivedata.txt", "w")
+	negative_superdoc = open("negativedata.txt", "w")
 
 	for line in training_without_stopwords:
 
@@ -175,41 +174,42 @@ def create_posneg(data):
 				positive_superdoc.write(" " + word)
 			else :
 				negative_superdoc.write(" " + word)
-		    
+
 		if FLAG == 1 :
 			positive_superdoc.write("\n")
 		else :
 			negative_superdoc.write("\n")
 
 	positive_superdoc.close()
-	negative_superdoc.close()   
-    
+	negative_superdoc.close()
+
+	print("Positive and Negative files created")
 
 
-	
 	return
-	
+
 
 
 
 def multinomial_naive_bayes(data,test):
 
-	stopwords.remove_stopwords2(test)
+
 
 	create_posneg(data)
 
 
-	positiveinit("positive4.txt")
+	positiveinit("positivedata.txt")
 
-	negativeinit("negative4.txt")
+	negativeinit("negativedata.txt")
 
 	tp = 0
 	tn = 0
 	fp = 0
 	fn = 0
 
+	stopwords.remove_stopwords2(test)
 	test_file = open("test_without_stopwords.txt", "r")
-	i=1
+
 	for line in test_file:
 
 		sentence = line.split()
@@ -217,12 +217,11 @@ def multinomial_naive_bayes(data,test):
 		#print(sentence)
 
 		if sentence[0] == '+' :
-
 			ACTUAL = 1
 			sentence.remove('+')
 		else :
 			ACTUAL = 0
-			sentence.remove('-')	
+			sentence.remove('-')
 
 
 
@@ -233,13 +232,13 @@ def multinomial_naive_bayes(data,test):
 		if posprob >=negprob :
 			REVIEW = 1
 			#print("POSITIVE\n")
-			
+
 		else :
 			REVIEW = 0
-			#print("NEGATIVE\n")	
-			
+			#print("NEGATIVE\n")
+
 		#print(i)
-		i+=1
+
 		if ACTUAL==1 and REVIEW==1:
 			tp=tp+1
 		elif ACTUAL==1 and REVIEW==0:
@@ -249,13 +248,15 @@ def multinomial_naive_bayes(data,test):
 		else:
 			tn=tn+1
 
+	print("tp = "+ str(tp) )
+	print("fn = "+ str(fn) )
+	print("fp = "+ str(fp) )
+	print("tn = "+ str(tn) )
 
 	accuracy = (tp+tn)/(tp+tn+fp+fn)
-    
-	print(accuracy) 
+
+	print("Accuracy : "+ str(accuracy))
+
+	print("Unigram completed!")
 
 	return
-
-			
-print("Program Successfully Terminated UNigaram!")	
-

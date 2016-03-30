@@ -2,8 +2,8 @@
 import re
 
 # remove_short_forms takes a line as argument and returns a line after removing the common short forms.
-def remove_short_forms(line):           
-    
+def remove_short_forms(line):
+
     line = re.sub("'m", "am", line)
     line = re.sub("'s", "is", line)
     line = re.sub("'d", "would", line)
@@ -11,25 +11,25 @@ def remove_short_forms(line):
     line = re.sub("'ve", "have", line)
     line = re.sub("'re", "are", line)
     line = re.sub("won't", "would not", line)
-    line = re.sub("doesn't", "does not", line)        
+    line = re.sub("doesn't", "does not", line)
     line = re.sub("n't", "not", line)
     line = re.sub("would't", "would not", line)
     line = re.sub("'t", "not", line)
     line = re.sub(' [^A-Za-z ]+', '', line)
-    
+
     return line
 
-# remove_stowords takes two files as argument and creates a new file after removing the stopwords_set. 
-def remove_stopwords2(data): 
+# remove_stopwords takes two files as argument and creates a new file after removing the stopwords_set.
+def remove_stopwords2(test):
 
     stopwords_set = set(line.strip() for line in open("stopwords.txt"))
     #print(stopwords_set)
- 
-    reviews_file = open(data, "r")
+
+    reviews_file = open(test, "r")
     output = open("test_without_stopwords.txt", "w")
 
     for line in reviews_file:
-        
+
         line = remove_short_forms(line) # removes the common short forms from the line for consistency
 
         words_in_line = line.split();
@@ -40,32 +40,33 @@ def remove_stopwords2(data):
                 output.write(word)
                 START_OF_REVIEW = 0
                 continue
-        
+
             elif word == '-' and START_OF_REVIEW == 1:
                 output.write(word)
                 START_OF_REVIEW = 0
                 continue
-                
+
             if word.lower() not in stopwords_set:
                     output.write(" " + word.lower()) # converts the word to lower case first, and then writes to the file.
-            
+
         output.write("\n")
-        
+
     reviews_file.close()
     output.close()
+    print("Stop Words Removed from Test")
     return
-    
 
-def remove_stopwords(data): 
+
+def remove_stopwords(data):
 
     stopwords_set = set(line.strip() for line in open("stopwords.txt"))
     #print(stopwords_set)
- 
+
     reviews_file = open(data, "r")
     output = open("data_without_stopwords.txt", "w")
 
     for line in reviews_file:
-        
+
         line = remove_short_forms(line) # removes the common short forms from the line for consistency
 
         words_in_line = line.split();
@@ -76,21 +77,21 @@ def remove_stopwords(data):
                 output.write(word)
                 START_OF_REVIEW = 0
                 continue
-        
+
             elif word == '-' and START_OF_REVIEW == 1:
                 output.write(word)
                 START_OF_REVIEW = 0
                 continue
-                
+
             if word.lower() not in stopwords_set:
                     output.write(" " + word.lower()) # converts the word to lower case first, and then writes to the file.
-            
+
         output.write("\n")
-        
+
     reviews_file.close()
     output.close()
+
+    print("Stop Words Removed from Data")
     return
 
-
-print("Program Successfully Terminated! Stip")
-            
+#remove_stopwords2("testthisround.txt")
