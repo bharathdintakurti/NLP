@@ -35,10 +35,11 @@ def posinit(data):
     global posbigrams
     posbigrams = bigramvocabulary.bigramvocabulary(data,"positivevocabulary.txt")
 
+
     #print(posunigrams)
 
     for bigram in posbigrams:
-        #if (posbigrams[bigram] >= 2):
+        if (posbigrams[bigram] >= 2):
             (word1, word2) = bigram
             if word1 in posunigrams:
                 posunigrams[word1] = int(posunigrams[word1]) - int(posbigrams[bigram])
@@ -46,6 +47,7 @@ def posinit(data):
                 posunigrams[word2] = int(posunigrams[word2]) - int(posbigrams[bigram])
 
     #print(posunigrams)
+
 
     return
 
@@ -60,9 +62,9 @@ def neginit(data):
     #print(negunigrams)
 
     for bigram in negbigrams:
-        #if (negbigrams[bigram] >= 2):
+         if (negbigrams[bigram] >= 2):
             (word1, word2) = bigram
-            if word1 in negunigrams:
+            if word1 in negunigrams :
                 negunigrams[word1] = int(negunigrams[word1]) - int(negbigrams[bigram])
             if word2 in negunigrams:
                 negunigrams[word2] = int(negunigrams[word2]) - int(negbigrams[bigram])
@@ -138,9 +140,9 @@ def bigrammodel(data,test):
 
     accuracy = (tp+tn)/(tp+tn+fp+fn)
 
-    print("Accuracy : "+ str(accuracy))
+    print("Accuracy : "+ str(accuracy) + "   ")
 
-    print("Task Accomplished")
+    #print("Task Accomplished")
 
     return accuracy
 
@@ -171,11 +173,11 @@ def calculate_positive2(words_in_review):
         bigram = (word1, word2)
 
         if bigram in posbigrams:
-            #if(posbigrams[bigram] >= 2):
+
             countb = float(posbigrams[bigram])
-            ##else :
-                ##countb = 0
+
         else:
+
             countb = 0
 
 
@@ -210,10 +212,9 @@ def calculate_negative2(words_in_review):
         bigram = (word1, word2)
 
         if bigram in negbigrams:
-            #if(negbigrams[bigram] >= 2):
+
             countb = float(negbigrams[bigram])
-            #else :
-                #countb = 0
+
         else:
             countb = 0
 
@@ -228,4 +229,4 @@ def calculate_negative2(words_in_review):
 
 
 
-bigrammodel("data.txt","data.txt")
+#bigrammodel("data.txt","data.txt")

@@ -21,7 +21,7 @@ def add_start_stop(input_file):
     data_file.close()
     output.close()
 
-    print("START and STOP added to data")
+    #print("START and STOP added to data")
 
     return
 
@@ -48,6 +48,6 @@ def add_start_stop2(input_file):
     data_file.close()
     output.close()
 
-    print("START and STOP added to test")
+    #print("START and STOP added to test")
 
     return

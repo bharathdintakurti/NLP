@@ -1,6 +1,6 @@
 
 def create_posneg(data):
-    
+
     training_without_stopwords = open(data, "r")
     positive_superdoc = open("positivedata.txt", "w")
     negative_superdoc = open("negativedata.txt", "w")
@@ -32,6 +32,6 @@ def create_posneg(data):
     positive_superdoc.close()
     negative_superdoc.close()
 
-    print("Positive and Negative files created")
+    #print("Positive and Negative files created")
 
     return

@@ -61,7 +61,7 @@ def unigramvocabulary(data,vocabfile):
 
     output.close()
 
-    print("Unigram Vocabulary created")
+    #print("Unigram Vocabulary created")
 
     return unigrams
 

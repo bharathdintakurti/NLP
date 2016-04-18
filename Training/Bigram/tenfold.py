@@ -20,8 +20,8 @@ def tenfold(data):
 
 		print("\n\n\n\n")
 		print("Iteration : " + str(i+1))
-		print("Reviews in Test File " + str(len(testing_this_round)))
-		print("Reviews in Data File " + str(len(training_this_round)))
+		#print("Reviews in Test File " + str(len(testing_this_round)))
+		#print("Reviews in Data File " + str(len(training_this_round)))
 
 		#print(testing_this_round)
 
@@ -79,7 +79,7 @@ def tenfold(data):
 
 		AverageAccuracy = sum(accuracy)/10
 
-	print ("Average Accuracy = " + str(AverageAccuracy))
+	print ("Average Accuracy = " + str(AverageAccuracy) + "   ")
 
 	return
 

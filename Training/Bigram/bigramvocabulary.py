@@ -36,7 +36,7 @@ def bigramvocabulary(data,vocabfile):
 
     for bigram in bigrams:
         (word1, word2) = bigram
-        if bigrams[bigram] >= 2:
+        if bigrams[bigram] >= 3:
             vocab_file.write(word1 + ' ' + word2 + '\n');
             bigram_count += 1
         else:
@@ -48,6 +48,6 @@ def bigramvocabulary(data,vocabfile):
     vocab_file.close();
     data_file.close();
 
-    print("Bigram Vocabulary created")
+    #print("Bigram Vocabulary created")
 
     return bigrams
