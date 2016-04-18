@@ -39,7 +39,7 @@ def posinit(data):
     #print(posunigrams)
 
     for bigram in posbigrams:
-        if (posbigrams[bigram] >= 2):
+        if (posbigrams[bigram] >= 3):
             (word1, word2) = bigram
             if word1 in posunigrams:
                 posunigrams[word1] = int(posunigrams[word1]) - int(posbigrams[bigram])
@@ -62,7 +62,7 @@ def neginit(data):
     #print(negunigrams)
 
     for bigram in negbigrams:
-         if (negbigrams[bigram] >= 2):
+         if (negbigrams[bigram] >= 3):
             (word1, word2) = bigram
             if word1 in negunigrams :
                 negunigrams[word1] = int(negunigrams[word1]) - int(negbigrams[bigram])
