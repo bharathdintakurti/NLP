@@ -13,5 +13,5 @@ Winter Semester 2016 | Department of CSE,NIT Calicut
 
 ##Results
 
-###[Training/Unigram/README.md] Unigram Results
-###[Training/Bigram/README.md] Bigram Results
+[Unigram Results](Training/Unigram/README.md)
+[Bigram Results](Training/Bigram/README.md)
