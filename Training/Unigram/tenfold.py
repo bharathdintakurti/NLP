@@ -6,7 +6,7 @@ import os
 def tenfold(data):
 
 
-
+	accuracy = []
 	train = open(data, "r")
 	training = []
 	for line in train :
@@ -14,16 +14,16 @@ def tenfold(data):
 
 
 	num_folds = 10
-	subset_size = int(len(training)/num_folds)
+	subset_size = int(len(training)/(num_folds*2))
 	for i in range(10):
 
-		testing_this_round = training[i*subset_size:(i+1)*subset_size]
-		training_this_round = training[:i*subset_size] + training[(i+1)*subset_size:]
+		testing_this_round = training[i*subset_size:(i+1)*subset_size] + training[250+i*subset_size:250+(i+1)*subset_size]
+		training_this_round = training[:i*subset_size] + training[(i+1)*subset_size:250+i*subset_size] + training[250+(i+1)*subset_size:]
 
 		print("\n\n\n\n")
-		print("Iteration : " + str(i+1))
-		print("Reviews in Test File " + str(len(testing_this_round)))
-		print("Reviews in Data File " + str(len(training_this_round)))
+		print("Iteration : " + str(i+1) + "   ")
+		#print("Reviews in Test File " + str(len(testing_this_round)))
+		#print("Reviews in Data File " + str(len(training_this_round)))
 
 		#print(testing_this_round)
 
@@ -77,7 +77,11 @@ def tenfold(data):
 		trainingwrite.close()
 
 
-		multinomial_naive_bayes("datathisround.txt","testthisround.txt")
+		accuracy.append(multinomial_naive_bayes("datathisround.txt","testthisround.txt"))
+
+		AverageAccuracy = sum(accuracy)/10
+
+	print ("Average Accuracy = " + str(AverageAccuracy) + "   ")
 
 	return
 
@@ -95,5 +99,6 @@ if os.path.exists("datathisround.txt"):
 	os.remove("data_without_stopwords.txt")
 
 	os.remove("test_without_stopwords.txt")
+
 
 tenfold("data.txt")

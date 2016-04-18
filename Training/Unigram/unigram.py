@@ -51,7 +51,7 @@ def positiveinit(data):
 
 	reviews_file.close()
 
-	print("Positive Init Completed")
+	#print("Positive Init Completed")
 	return
 
 def negativeinit(data):
@@ -103,7 +103,7 @@ def negativeinit(data):
 
 	reviews_file.close()
 
-	print("Negative Init Completed")
+	#print("Negative Init Completed")
 	return
 
 
@@ -183,7 +183,7 @@ def create_posneg(data):
 	positive_superdoc.close()
 	negative_superdoc.close()
 
-	print("Positive and Negative files created")
+	#print("Positive and Negative files created")
 
 
 	return
@@ -255,8 +255,8 @@ def multinomial_naive_bayes(data,test):
 
 	accuracy = (tp+tn)/(tp+tn+fp+fn)
 
-	print("Accuracy : "+ str(accuracy))
+	print("Accuracy : "+ str(accuracy) + "  ")
 
-	print("Unigram completed!")
+	#print("Unigram completed!")
 
-	return
+	return accuracy

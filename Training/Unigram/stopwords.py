@@ -53,7 +53,7 @@ def remove_stopwords2(test):
 
     reviews_file.close()
     output.close()
-    print("Stop Words Removed from Test")
+    #print("Stop Words Removed from Test")
     return
 
 
@@ -91,7 +91,7 @@ def remove_stopwords(data):
     reviews_file.close()
     output.close()
 
-    print("Stop Words Removed from Data")
+    #print("Stop Words Removed from Data")
     return
 
 #remove_stopwords2("testthisround.txt")
