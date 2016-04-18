@@ -106,4 +106,6 @@ fn = 8
 fp = 10
 tn = 15
 Accuracy : 0.64  
-Average Accuracy = 0.7 
+
+
+#Average Accuracy = 0.7 
