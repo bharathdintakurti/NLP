@@ -1,0 +1,979 @@
+-
+START
+STOP
+able
+actually
+advise
+again
+ago
+alot
+always
+amazing
+amazon
+android
+another
+anybody
+anymore
+anyone
+anything
+app
+apparent
+applications
+apps
+area
+around
+ask
+audio
+automatically
+average
+away
+awesome
+backup
+bad
+battery
+beautiful
+been
+before
+began
+being
+best
+better
+bettry
+between
+big
+biggest
+bit
+blackberry
+blaster
+bloatware
+bluetooth
+both
+bottom
+bought
+box
+brand
+bright
+brightness
+broke
+broken
+build
+button
+buy
+buying
+call
+calls
+came
+camera
+cannot
+canot
+cant
+card
+care
+case
+cause
+center
+changed
+charge
+charged
+charger
+charging
+cheap
+closed
+code
+color
+comes
+coming
+common
+companies
+comparatively
+compared
+complained
+connect
+connection
+consume
+consumption
+contact
+continues
+contract
+contrast
+couple
+crack
+cracked
+crap
+crazy
+customer
+d850
+d855
+d855gb
+daily
+damage
+dark
+data
+days
+dead
+decent
+decide
+decided
+defective
+definitely
+design
+developed
+device
+devices
+did
+didnot
+didnt
+died
+different
+disappointed
+disappointing
+disappointment
+display
+does
+doing
+don't
+done
+donot
+dont
+down
+downloading
+drain
+drainage
+drained
+draining
+drains
+drop
+dropped
+dropping
+due
+during
+ear
+either
+else
+end
+english
+enough
+entire
+etc
+ever
+every
+everyone
+everything
+excellent
+except
+experiencing
+extremely
+eyes
+face
+facebook
+facing
+factory
+far
+fast
+faster
+faulty
+feature
+features
+feel
+feeling
+feels
+fell
+few
+file
+find
+fine
+fix
+fone
+found
+free
+freezes
+front
+frustrating
+full
+fully
+function
+g2
+g3
+g3gb
+g3is
+galaxy
+game
+games
+gaming
+garbage
+gave
+gets
+getting
+glitches
+goes
+going
+good
+google
+got
+gps
+great
+guys
+guyz
+had
+half
+hang
+hanging
+happen
+happened
+happening
+happy
+hard
+hardware
+has
+hate
+having
+hd
+headphone
+hearing
+heat
+heated
+heating
+heats
+heavy
+hell
+hello
+help
+here
+hi
+high
+hold
+home
+honestly
+hope
+hot
+hotspot
+hours
+htc
+huge
+iam
+idea
+idle
+ihave
+im
+immediately
+improvement
+income
+installed
+instructions
+internet
+iphone
+ir
+isnot
+issue
+issues
+items
+itis
+itself
+junk
+keep
+keeps
+knock
+know
+lag
+lagging
+laggy
+lags
+last
+lasted
+lasthrs
+lasts
+later
+least
+less
+let
+lets
+lexus
+lg
+lg3
+lgg3
+life
+like
+likely
+listen
+literally
+little
+loading
+lollipop
+long
+longer
+looks
+lose
+loss
+lot
+love
+low
+lte
+m7
+m8
+made
+major
+make
+makes
+many
+mark
+matter
+maybe
+mean
+mentioned
+mentioning
+messages
+mic
+microphone
+middle
+minute
+minutes
+mobile
+mode
+model
+moderate
+money
+month
+months
+more
+movies
+mpixelmpixel
+much
+multi
+music
+need
+needed
+needs
+net
+never
+new
+next
+nexus
+nice
+night
+no
+normal
+normally
+not
+note
+note4
+nothing
+noticed
+nov
+off
+offered
+offers
+often
+ok
+okey
+old
+once
+open
+opening
+operating
+opinion
+option
+os
+others
+outside
+overheating
+overheats
+overnight
+own
+owned
+panel
+pay
+paying
+pc
+people
+performance
+phone
+phoneis
+phones
+physical
+picture
+piece
+pixels
+plain
+plastic
+play
+played
+playing
+please
+plug
+plz
+pocket
+point
+poor
+port
+possible
+power
+prefer
+pressing
+pretty
+price
+problem
+problems
+product
+provide
+purchase
+purchased
+push
+put
+qhd
+quad
+quality
+quickly
+ram
+randomly
+read
+reader
+ready
+really
+reason
+reboot
+recently
+recommend
+refurbished
+refused
+regret
+remove
+repair
+replace
+replaced
+replacement
+replacing
+reset
+resolution
+respond
+restart
+restarting
+restored
+return
+returned
+reviews
+ridiculous
+right
+rom
+rooted
+routines
+running
+runs
+s3
+s5
+said
+same
+samsung
+satisfactory
+satisfied
+save
+says
+scanner
+screen
+sd
+second
+seconds
+seems
+send
+sense
+sent
+serious
+service
+several
+share
+should
+shouldnot
+shut
+shutdown
+shuts
+sim
+simply
+since
+single
+slightly
+slippery
+slow
+small
+smartphone
+smooth
+software
+solution
+solve
+something
+sometimes
+soon
+sound
+speakerphone
+specially
+specs
+sprint
+stanby
+stand
+standard:
+standby
+star
+start
+started
+starting
+stay
+still
+stop
+stopped
+store
+straight
+stupid
+such
+sucks
+suggest
+suite
+super
+support
+sure
+surfing
+surprise
+switched
+switching
+system
+t
+take
+takes
+taking
+talking
+tell
+terms
+terrible
+text
+texting
+thank
+thanks
+thing
+things
+those
+though
+three
+through
+time
+times
+today
+told
+too
+took
+touch
+tried
+true
+try
+trying
+turn
+turned
+turning
+turns
+twice
+u
+um
+unable
+under
+unlock
+unstable
+until
+update
+updated
+updating
+upto
+ur
+usage
+usb
+used
+useless
+user
+using
+usually
+verizon
+version
+versions
+very
+vibrant
+video
+voicemail
+wait
+wanted
+warranty
+waste
+week
+weeks
+went
+were
+whenever
+where
+whether
+while
+whole
+why
+wi-fi
+wifi
+window
+within
+without
+wondering
+wont
+worked
+working
+works
+world
+worse
+worst
+worth
+wouldnot
+wrong
+x
+youwill
+moderate usage
+within minutes
+month ago
+phone ever
+mobile phone
+s5 note
+mic phone
+few months
+buy phone
+plain english
+card reader
+lasthrs ur
+issues phone
+phone months
+phone week
+returned phone
+g3 d855gb
+ihave had
+sound quality
+life STOP
+update battery
+problem lg
+START lasted
+charged STOP
+got really
+product STOP
+net playing
+lg quad
+g3 d855
+draining fast
+phone really
+phone until
+few days
+g3 STOP
+month usage
+right box
+screen does
+has been
+START no
+phone STOP
+verizon store
+too fast
+g3 canot
+really hot
+found phone
+down off
+START hi
+dont know
+mpixelmpixel x
+START worked
+switching between
+g3 few
+drain fast
+battery drain
+not sure
+issue phone
+phone does
+problem phone
+not let
+beautiful phone
+not upto
+new battery
+iam very
+having issue
+fast problem
+few seconds
+battery performance
+charge phone
+phone heats
+hang call
+battery sucks
+buy lg
+START iam
+START hate
+knock code
+using normally
+else STOP
+quality not
+worst phone
+many times
+did not
+upto mark
+START poor
+something else
+heating issues
+phone phone
+hd resolution
+never buy
+know very
+phone canot
+START phone
+times while
+having same
+g3 d850
+screen resolution
+battery STOP
+comes standby
+START g3
+x lg
+heating battery
+like STOP
+using fone
+phone donot
+stopped working
+playing games
+itis not
+gets heated
+face down
+got g3
+used another
+not know
+ur using
+im sure
+not happy
+lg STOP
+camera quality
+phone like
+really great
+battery died
+START got
+much disappointed
+less month
+lg not
+drains fast
+reset times
+very much
+phone should
+phone has
+has same
+very disappointed
+donot know
+screen turn
+hotspot function
+within week
+hard reset
+window should
+phone terrible
+very disappointing
+routines comes
+phone screen
+START months
+poor battery
+problem not
+no battery
+hello guys
+battery backup
+issue STOP
+please STOP
+physical damage
+restart shutdown
+using hard
+not better
+many features
+within hours
+screen no
+months phone
+worst not
+battery drainage
+phone too
+mentioning free
+START lg
+phone died
+always been
+loss itis
+drains very
+START using
+should support
+START very
+starting regret
+standby okey
+phone had
+not vibrant
+display too
+anything cause
+g3 lags
+data phone
+turn off
+no matter
+hard minutes
+not listen
+START not
+heating issue
+youwill likely
+charger battery
+play store
+standard: x
+more better
+sim card
+great phone
+apps STOP
+g3 worst
+much battery
+screen not
+major problems
+battery consumption
+games using
+everything good
+not good
+START hello
+features no
+not worth
+anyone help
+using net
+game within
+drained fast
+hold charge
+second phone
+more often
+not bad
+touch screen
+very hot
+no lg
+phone battery
+u loss
+hate phone
+shuts down
+START product
+not using
+too much
+bad though
+again STOP
+good battery
+not respond
+gets hot
+phone standby
+free replacement
+fast STOP
+brand new
+okey ur
+normally routines
+same problem
+off own
+customer care
+phone very
+battery drained
+charging port
+phone itself
+not much
+lg again
+remove battery
+phone great
+money not
+regret buying
+often not
+START worst
+iam using
+has many
+fast heating
+fully charged
+ram version
+lasted hours
+bought phone
+START battery
+pc suite
+take phone
+defective hardware
+backup g3
+battery draining
+phone heating
+note note
+phoneis battery
+im having
+mobile hotspot
+htc sense
+not buy
+quad hd
+were not
+everything phone
+buy STOP
+phone got
+not last
+phone not
+START bought
+problem STOP
+very bad
+waste money
+usage STOP
+got lg
+START been
+no longer
+phone gets
+phone did
+several times
+both phones
+definitely not
+using phone
+same issue
+keep getting
+love phone
+play games
+really fast
+still not
+lg pc
+g3 really
+problem heating
+does not
+like crazy
+not satisfied
+battery drains
+heavy games
+u play
+mobile data
+factory reset
+having major
+better STOP
+guys problem
+disappointed battery
+heating problem
+lg phone
+lg g3
+does anyone
+crap STOP
+new phone
+itis battery
+multi window
+heating u
+sure STOP
+good STOP
+been using
+not STOP
+iam having
+using lg
+find serious
+lot STOP
+shut off
+canot lasthrs
+qhd display
+lags lot
+very fast
+phone lg
+looks like
+playing game
+home screen
+ir blaster
+lg made
+battery life
+lag free
+problem still
+minutes u
+phones like
+START im
+START had
+fine few
+had less
+buy new
+lg g3gb
+bad battery
+x mpixelmpixel
+same thing
+using g3
+turning off
+between apps
