@@ -123,7 +123,7 @@ def calculate_positive(sentence):
 
 			prob = prob + probword
 		else :
-			prob = prob + math.log2((1)/(int(len(positivevocab))))
+			prob = prob + math.log2((1)/(sum(positivefreq)+int(len(positivevocab))))
 
 	return prob
 
@@ -143,7 +143,7 @@ def calculate_negative(sentence):
 
 			prob = prob + probword
 		else :
-			prob = prob + math.log2((1)/(int(len(negativevocab))))
+			prob = prob + math.log2((1)/(sum(negativefreq)+int(len(negativevocab))))
 
 	return prob
 

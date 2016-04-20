@@ -85,20 +85,4 @@ def tenfold(data):
 
 	return
 
-
-if os.path.exists("datathisround.txt"):
-
-	os.remove("datathisround.txt")
-
-	os.remove("testthisround.txt")
-
-	os.remove("positivedata.txt")
-
-	os.remove("negativedata.txt")
-
-	os.remove("data_without_stopwords.txt")
-
-	os.remove("test_without_stopwords.txt")
-
-
-tenfold("data.txt")
+tenfold("data.txt")	

@@ -1,111 +1,109 @@
-
 #Results
 
-Iteration : 1   
-tp = 20
-fn = 5
-fp = 14
-tn = 11
-Accuracy : 0.62  
+Iteration : 1    
+tp = 20  
+fn = 5  
+fp = 9  
+tn = 16  
+Accuracy : 0.72   
 
 
 
 
 
-Iteration : 2   
-tp = 18
-fn = 7
-fp = 8
-tn = 17
-Accuracy : 0.7  
+Iteration : 2    
+tp = 21  
+fn = 4  
+fp = 6  
+tn = 19  
+Accuracy : 0.8  
 
 
 
 
 
 Iteration : 3   
-tp = 15
-fn = 10
-fp = 7
-tn = 18
-Accuracy : 0.66  
+tp = 15  
+fn = 10  
+fp = 5  
+tn = 20  
+Accuracy : 0.7  
 
 
 
 
 
 Iteration : 4   
-tp = 17
-fn = 8
-fp = 5
-tn = 20
-Accuracy : 0.74  
+tp = 22  
+fn = 3  
+fp = 3  
+tn = 22  
+Accuracy : 0.88  
 
 
 
 
 
 Iteration : 5   
-tp = 21
-fn = 4
-fp = 12
-tn = 13
-Accuracy : 0.68  
+tp = 22  
+fn = 3  
+fp = 7  
+tn = 18  
+Accuracy : 0.8  
 
 
 
 
 
 Iteration : 6   
-tp = 19
-fn = 6
-fp = 8
-tn = 17
-Accuracy : 0.72  
+tp = 22  
+fn = 3  
+fp = 6  
+tn = 19  
+Accuracy : 0.82  
 
 
 
 
 
 Iteration : 7   
-tp = 20
-fn = 5
-fp = 6
-tn = 19
-Accuracy : 0.78  
+tp = 22  
+fn = 3  
+fp = 5  
+tn = 20  
+Accuracy : 0.84  
 
 
 
 
 
 Iteration : 8   
-tp = 24
-fn = 1
-fp = 13
-tn = 12
-Accuracy : 0.72  
+tp = 24  
+fn = 1  
+fp = 3  
+tn = 22  
+Accuracy : 0.92  
 
 
 
 
 
 Iteration : 9   
-tp = 19
-fn = 6
-fp = 7
-tn = 18
-Accuracy : 0.74  
+tp = 19  
+fn = 6  
+fp = 2  
+tn = 23  
+Accuracy : 0.84  
 
 
 
 
 
 Iteration : 10   
-tp = 17
-fn = 8
-fp = 10
-tn = 15
-Accuracy : 0.64  
+tp = 20  
+fn = 5  
+fp = 6  
+tn = 19  
+Accuracy : 0.78  
 
-
-#Average Accuracy = 0.7 
+##Average Accuracy = 0.8099999999999999 
